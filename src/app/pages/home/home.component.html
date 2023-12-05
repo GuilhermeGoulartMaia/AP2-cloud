@@ -1,0 +1,25 @@
+    <header>
+        <h1>Bem-vindo à Minha Página Inicial</h1>
+    </header>
+
+    <div *ngFor="let post of posts">
+      <div (click)="redirectToPost(post.id)">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.body }}</p>
+      </div>
+    </div>
+    <a routerLink="/detail">Ir para detalhes</a>
+    <a routerLink="/">Home</a>
+    <a routerLink="/posts">Posts</a>
+    <a routerLink="/create-comment">Create Comment</a>
+
+    <nav>
+
+        <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+

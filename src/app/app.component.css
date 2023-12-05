@@ -1,0 +1,14 @@
+
+header{
+  background-color: white;
+  color: aqua;
+  padding: 10px;
+  text-align: center;
+}
+router-outlet{
+  flex:1;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
